@@ -1,7 +1,7 @@
 from aws_cdk import (
     # Duration,
     Stack,
-    # aws_sqs as sqs,
+    aws_lambda as _lambda,
 )
 from constructs import Construct
 
@@ -13,7 +13,12 @@ class Microservice2Stack(Stack):
         # The code that defines your stack goes here
 
         # example resource
-        # queue = sqs.Queue(
-        #     self, "Microservice2Queue",
-        #     visibility_timeout=Duration.seconds(300),
-        # )
+        my_lambda = _lambda.Function(
+             self, "expohandler",
+             runtime =_lambda.Runtime.PYTHON_3_7,
+             code =_lambda.Code.from_asset('lambda'),
+             handler ='expo.lambda_handler'
+             #visibility_timeout=Duration.seconds(300),
+             )
+         
+        
