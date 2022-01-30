@@ -39,9 +39,10 @@ Grade: Normal
 #SERVICES USED : AWS CDK(Cloud development kit), AWS Cloud9, AWS Lambda
 
 ## Summary of Steps
-Create git hub repository
-Create new environment in AWS cloud9
-Setup CDK environment in cloud9
+1. Create git hub repository
+2. Create new environment in AWS cloud9
+
+3. Setup CDK environment in cloud9
   cdk --version - install cdk
   npm install -g aws-cdk@1.x. - install cdk version
   cdk init app --language python. - initialise CD4 app dependencies and creates CDK environment
@@ -54,8 +55,9 @@ Setup CDK environment in cloud9
   cdk diff. - check for differences between local and remote code versions
   cdk deploy - Deploy the app 
   cdk bootstrap - You may find this useful incase of any errors
-By now the app is deployed, go to AWS lambda and check the latest modified functions
-Test your function to see that it works well.
+  
+4. By now the app is deployed, go to AWS lambda and check the latest modified functions
+5. Test your function to see that it works well.
 
 Thank you!
 
