@@ -36,7 +36,7 @@ Grade: Normal
 
 
 
-#SERVICES USED : AWS CDK(Cloud development kit), AWS Cloud9, AWS Lambda
+# SERVICES USED : AWS CDK(Cloud development kit), AWS Cloud9, AWS Lambda
 
 ## Summary of Steps
 1. Create git hub repository
