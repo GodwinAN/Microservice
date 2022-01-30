@@ -43,6 +43,7 @@ Grade: Normal
 2. Create new environment in AWS cloud9
 
 3. Setup CDK environment in cloud9
+
   cdk --version - install cdk
   npm install -g aws-cdk@1.x. - install cdk version
   cdk init app --language python. - initialise CD4 app dependencies and creates CDK environment
