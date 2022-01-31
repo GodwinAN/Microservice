@@ -13,13 +13,13 @@ async def root():
 def bmi_calculator(weight, height):
     bmi = round((float(weight)/(float(height)**2)),2)
     if bmi <= 18.5:
-        return{"BMI is {} : You are below standard body mass, you should eat food rich in fats and eat regularly".format(float(bmi))}
+        return{ float(bmi) : "You are below standard body mass, you should eat food rich in fats and eat regularly"}
     elif bmi >= 18.5 and bmi <= 24.9:
-        return{"BMI is {} : You have a normal standard weight".format(float(bmi))}
+        return{ float(bmi) : "You have a normal standard weight"}
     elif bmi >= 25 and bmi <= 29.9:
-        return{"BMI is {} : You over weighed normal standard weight".format(float(bmi))}
+        return{ float(bmi) : "You over weighed normal standard weight"}
     else: 
-        return{"BMI is {} : You have obesity and needs quick medical attention".format(float(bmi))}
+        return{ float(bmi) : "You have obesity and needs quick medical attention"}
 
 
 if __name__ == '__main__':
